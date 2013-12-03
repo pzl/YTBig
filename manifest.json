@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "YTBig",
+    "description": "add command to resize youtube video to arbitrary size",
+    "version": "0.1",
+    "author": "Dan Panzarella <alsoelp@gmail.com>",
+    "homepage_url": "https://github.com/pzl/YTBig",
+    "page_action" : {
+        "default_icon": {
+            "19": "images/icon.png"
+           //"38": "images/icon38.png"
+        },
+        "default_title": "YTBig"
+    },
+    //"icons": {
+        //"16": "images/icon16.png",
+        //"48": "images/icon48.png",
+        //"128": "images/icon128.png"
+    //},
+    "options_page": "opt.html",
+    "content_scripts": [{
+        "matches": ["http://www.youtube.com/*"],
+        "css": ["style.css"],
+        "js": ["js.js"]
+    }]
+}

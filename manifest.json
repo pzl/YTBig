@@ -19,7 +19,8 @@
     //},
     "options_page": "opt.html",
     "content_scripts": [{
-        "matches": ["http://www.youtube.com/*"],
+        "all_frames": true,
+        "matches": ["*://*.youtube.com/watch*"],
         "css": ["style.css"],
         "js": ["js.js"]
     }]
